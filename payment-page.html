@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-xyMU7RufUdPGVOZRrc2z2nRWVWBONzqa0NFctWglHmt5q5ukL22+lvHAqhqsIm3h" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;padding-top:10px;padding-bottom:10px;">
         <div class="container"><a class="navbar-brand logo" href="index.html" style="color:#142b56;"><img src="assets/img/logo006.png" style="width:100px;height:100px;margin-right:10px;">MyDataFlux</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
@@ -30,31 +31,41 @@
                     <li class="dropdown" style="padding-right:25px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="height:50px;padding-top:15px;">Support</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="faq.html" style="font-size:12.8px;font-weight:600;">FAQ</a><a class="dropdown-item" role="presentation" href="contact.html" style="font-weight:600;font-size:12.8px;">CONTACT</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;background-color:#f77241;color:rgb(255,255,255);font-weight:600;">LOGIN / REGISTER</button></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;color:rgb(255,255,255);font-weight:600;background-color:#f77241;">LOG IN / REGISTER</button></a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page payment-page">
-        <section class="clean-block payment-form dark">
+    <main class="page payment-page" style="padding-top:130px;">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/web_bkgd_005.png&quot;);background-size:cover;min-height:200px;color:rgba(255,255,255,0);"></section>
+        <div class="container">
+            <ol class="breadcrumb" style="background-color:rgba(233,236,239,0);">
+                <li class="breadcrumb-item"><a href="index.html"><span><i class="fa fa-home" style="font-size:20px;color:#142b56;"></i></span></a></li>
+                <li class="breadcrumb-item"><a href="#" target="_parent"><span style="color:#142b56;">CART</span></a></li>
+                <li class="breadcrumb-item active"><span style="color:#f77241;font-weight:600;">PAYMENT</span></li>
+            </ol>
+        </div>
+        <section class="clean-block clean-services dark" style="background-color:rgba(255,255,255,0);padding-bottom:0px;">
             <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Payment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                <div class="block-heading" style="padding-top:0px;margin-bottom:0px;">
+                    <p class="text-left" style="max-width:none;margin-right:0px;margin-left:0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.<br></p>
                 </div>
+                <hr>
+            </div>
+        </section>
+        <section class="clean-block payment-form dark" style="background-color:rgba(255,255,255,0);">
+            <div class="container">
                 <form>
-                    <div class="products">
+                    <div class="products" style="background-color:transparent;">
                         <h3 class="title">Checkout</h3>
-                        <div class="item"><span class="price">$200</span>
-                            <p class="item-name">Product 1</p>
-                            <p class="item-description">Lorem ipsum dolor sit amet</p>
-                        </div>
                         <div class="item"><span class="price">$120</span>
-                            <p class="item-name">Product 2</p>
-                            <p class="item-description">Lorem ipsum dolor sit amet</p>
+                            <p class="item-name">Super User Subscription</p>
+                            <p class="item-description" style="color:#142b56;">Lorem ipsum dolor sit amet</p>
                         </div>
-                        <div class="total"><span>Total</span><span class="price">$320</span></div>
+                        <div class="item"></div>
+                        <div class="total"><span>Total</span><span class="price">$120</span></div>
                     </div>
+                    <hr>
                     <div class="card-details">
                         <h3 class="title">Credit Card Details</h3>
                         <div class="form-row">
@@ -73,7 +84,7 @@
                                 <div class="form-group"><label for="cvc">CVC</label><input class="form-control" type="text" placeholder="CVC" id="cvc"></div>
                             </div>
                             <div class="col-sm-12">
-                                <div class="form-group"><button class="btn btn-primary btn-block" type="button">Proceed</button></div>
+                                <div class="form-group"><button class="btn btn-link btn-block" type="button" style="color:#ffffff;background-color:#f77241;">Proceed</button></div>
                             </div>
                         </div>
                     </div>

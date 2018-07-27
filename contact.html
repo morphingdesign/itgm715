@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-xyMU7RufUdPGVOZRrc2z2nRWVWBONzqa0NFctWglHmt5q5ukL22+lvHAqhqsIm3h" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;padding-top:10px;padding-bottom:10px;">
         <div class="container"><a class="navbar-brand logo" href="index.html" style="color:#142b56;"><img src="assets/img/logo006.png" style="width:100px;height:100px;margin-right:10px;">MyDataFlux</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
@@ -30,24 +31,32 @@
                     <li class="dropdown" style="padding-right:25px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="height:50px;padding-top:15px;">Support</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="faq.html" style="font-size:12.8px;font-weight:600;">FAQ</a><a class="dropdown-item" role="presentation" href="contact.html" style="font-weight:600;font-size:12.8px;">CONTACT</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;background-color:#f77241;color:rgb(255,255,255);font-weight:600;">LOGIN / REGISTER</button></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;color:rgb(255,255,255);font-weight:600;background-color:#f77241;">LOG IN / REGISTER</button></a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page contact-us-page">
+    <main class="page contact-us-page" style="padding-top:130px;">
         <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/web_bkgd_005.png&quot;);background-size:cover;min-height:200px;color:rgba(255,255,255,0);"></section>
         <div class="container">
             <ol class="breadcrumb" style="background-color:rgba(233,236,239,0);">
-                <li class="breadcrumb-item"><a href="index.html"><span>HOME</span></a></li>
-                <li class="breadcrumb-item active"><span>CONTACT US</span></li>
+                <li class="breadcrumb-item"><a href="index.html"><span><i class="fa fa-home" style="font-size:20px;color:#142b56;"></i></span></a></li>
+                <li class="breadcrumb-item active"><span style="color:#f77241;font-weight:600;">CONTACT US</span></li>
             </ol>
         </div>
-        <section class="clean-block clean-form dark" style="background-color:rgba(255,255,255,0);">
+        <section class="clean-block clean-services dark" style="background-color:rgba(255,255,255,0);padding-bottom:0px;">
+            <div class="container">
+                <div class="block-heading" style="padding-top:0px;margin-bottom:0px;">
+                    <p class="text-left" style="max-width:none;margin-right:0px;margin-left:0px;">Use the following form to request information. &nbsp;An email response will be delivered within 1-2 days.<br></p>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section style="margin-bottom:20px;">
             <div class="container">
                 <div>
                     <div class="row">
-                        <div class="col" style="padding-right:0px;">
+                        <div class="col-md-6">
                             <form style="margin-right:0px;">
                                 <div class="form-group"><label>Name *</label><input class="form-control" type="text" required="" inputmode="verbatim"></div>
                                 <div class="form-group"><label>Subject *</label><input class="form-control" type="text" required="" inputmode="verbatim"></div>
@@ -55,12 +64,12 @@
                                 <div class="form-group"><label>Phone Number</label><input class="form-control" type="tel" inputmode="tel"></div>
                             </form>
                         </div>
-                        <div class="col" style="padding-left:0px;">
-                            <form style="margin-left:0px;">
+                        <div class="col-md-6">
+                            <form style="margin-right:0px;">
                                 <div class="form-group"><label>Subject *</label><select class="form-control" required=""><optgroup label="Subject"><option value="12" selected="">Select</option><option value="13">General</option><option value="14">Quote Inquiry</option><option value="15">Technical Support</option></optgroup></select></div>
                                 <div
                                     class="form-group"><label>Message *</label><textarea class="form-control" required="" maxlength="3000" inputmode="verbatim" style="height:156px;"></textarea></div>
-                        <div class="form-group"><a class="btn btn-link btn-block" role="button" href="contact-confirmation.html" target="_parent" style="background-color:#f77241;color:rgb(255,255,255);">Send</a></div>
+                        <div class="form-group"><a class="btn btn-link btn-block" role="button" href="contact-confirmation.html" target="_parent" style="background-color:#f77241;color:rgb(255,255,255);font-weight:600;">Send</a></div>
                         </form>
                     </div>
                 </div>

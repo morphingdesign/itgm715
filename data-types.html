@@ -10,13 +10,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-xyMU7RufUdPGVOZRrc2z2nRWVWBONzqa0NFctWglHmt5q5ukL22+lvHAqhqsIm3h" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-pdf">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">PDF</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p>Portable Document Format</p>
+                    <hr>
+                    <h6 class="modal-title">Associated Programs:</h6>
+                    <p style="height:auto;">Program 1, Program 2, Program 3, etc.</p>
+                    <hr>
+                    <h6 class="modal-title">Information:</h6>
+                    <p style="height:auto;">Etiam vitae commodo risus. Pellentesque tincidunt vulputate egestas. Maecenas vel pellentesque nulla, ut finibus elit. Aliquam vestibulum orci vitae ligula congue sagittis. Aenean aliquet justo vitae ultrices cursus. Praesent sollicitudin
+                        tincidunt lacus, ac imperdiet velit porta vel. In nisi orci, aliquet id odio in, vehicula placerat nunc. Quisque vel sollicitudin massa.</p>
+                    <hr>
+                    <h6 class="modal-title">Useful Links:</h6>
+                    <p style="height:auto;">weblink</p>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;padding-top:10px;padding-bottom:10px;">
         <div class="container"><a class="navbar-brand logo" href="index.html" style="color:#142b56;"><img src="assets/img/logo006.png" style="width:100px;height:100px;margin-right:10px;">MyDataFlux</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
@@ -30,43 +53,34 @@
                     <li class="dropdown" style="padding-right:25px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="height:50px;padding-top:15px;">Support</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="faq.html" style="font-size:12.8px;font-weight:600;">FAQ</a><a class="dropdown-item" role="presentation" href="contact.html" style="font-weight:600;font-size:12.8px;">CONTACT</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;background-color:#f77241;color:rgb(255,255,255);font-weight:600;">LOGIN / REGISTER</button></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;color:rgb(255,255,255);font-weight:600;background-color:#f77241;">LOG IN / REGISTER</button></a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page product-page">
+    <main class="page product-page" style="padding-top:130px;">
         <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/web_bkgd_005.png&quot;);background-size:cover;min-height:200px;color:rgba(255,255,255,0);"></section>
         <div class="container">
             <ol class="breadcrumb" style="background-color:rgba(233,236,239,0);">
-                <li class="breadcrumb-item"><a href="index.html"><span>HOME</span></a></li>
-                <li class="breadcrumb-item active"><span>DATA TYPES</span></li>
+                <li class="breadcrumb-item"><a href="index.html"><span><i class="fa fa-home" style="font-size:20px;color:#142b56;"></i></span></a></li>
+                <li class="breadcrumb-item active"><span style="color:#f77241;font-weight:600;">DATA TYPES</span></li>
             </ol>
         </div>
         <section class="clean-block clean-product dark" style="background-color:rgba(255,255,255,0);">
             <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Data Types</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                </div>
-            </div>
-            <div class="container"><input type="search">
+                <form class="form-inline mr-auto" target="_self" style="margin-bottom:10px;">
+                    <div class="form-group" style="margin-left:auto;"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" name="search" placeholder="Search Data Types" id="search-field" style="margin-left:10px;"></div>
+                </form>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Column 1</th>
-                                <th>Column 2</th>
+                                <th style="font-weight:normal;">Click on data type for more information.</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
+                                <td><a href="#" style="color:#142b56;" data-toggle="modal" data-target="#modal-pdf">PDF&nbsp;<i class="fa fa-file-pdf-o" style="font-size:24px;color:#142b56;"></i></a></td>
                             </tr>
                         </tbody>
                     </table>

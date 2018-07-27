@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-xyMU7RufUdPGVOZRrc2z2nRWVWBONzqa0NFctWglHmt5q5ukL22+lvHAqhqsIm3h" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="padding:-0;margin:0;padding-top:10px;padding-bottom:10px;">
         <div class="container"><a class="navbar-brand logo" href="index.html" style="color:#142b56;"><img src="assets/img/logo006.png" style="width:100px;height:100px;margin-right:10px;">MyDataFlux</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
@@ -30,35 +31,58 @@
                     <li class="dropdown" style="padding-right:25px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="height:50px;padding-top:15px;">Support</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="faq.html" style="font-size:12.8px;font-weight:600;">FAQ</a><a class="dropdown-item" role="presentation" href="contact.html" style="font-weight:600;font-size:12.8px;">CONTACT</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;background-color:#f77241;color:rgb(255,255,255);font-weight:600;">LOGIN / REGISTER</button></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" target="_parent"><button class="btn btn-link btn-block" type="button" style="font-size:12.8PX;color:rgb(255,255,255);font-weight:600;background-color:#f77241;">LOG IN / REGISTER</button></a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page shopping-cart-page">
+    <main class="page shopping-cart-page" style="padding-top:130px;">
         <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/web_bkgd_005.png&quot;);background-size:cover;min-height:200px;color:rgba(255,255,255,0);"></section>
         <div class="container">
             <ol class="breadcrumb" style="background-color:rgba(233,236,239,0);">
-                <li class="breadcrumb-item"><a href="index.html"><span>HOME</span></a></li>
-                <li class="breadcrumb-item active"><span>CONFIRMATION</span></li>
+                <li class="breadcrumb-item"><a href="index.html"><span><i class="fa fa-home" style="font-size:20px;color:#142b56;"></i></span></a></li>
+                <li class="breadcrumb-item active"><span style="color:#f77241;font-weight:600;">CONFIRMATION</span></li>
             </ol>
         </div>
         <div class="container">
             <div class="intro">
-                <h2 class="text-center" style="font-weight:600;color:#f77241;">SUCCESS!</h2>
-                <p class="text-center">Your inquiry has been submitted.</p>
+                <h2 class="text-center" style="font-weight:600;color:#f77241;">Success!</h2>
+                <p class="text-center" style="margin-right:auto;margin-left:auto;max-width:450px;">Your inquiry has been submitted. An email response will be delivered within 1-2 days.</p>
             </div>
             <div class="buttons"></div>
         </div>
         <section class="clean-block clean-cart dark" style="background-color:rgba(255,255,255,0);">
             <div class="container">
-                <div class="content">
-                    <div class="row no-gutters">
-                        <div class="col-md-12 col-lg-8">
-                            <div class="items"></div>
+                <div class="content" style="width:28px;margin-left:auto;background-color:transparent;"><a href="#" target="_parent"><i class="fa fa-print" style="font-size:24px;color:#142b56;"></i></a></div>
+            </div>
+            <div class="container" style="background-color:#eae8dc;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div style="margin-top:20px;">
+                            <h6 style="font-weight:600;">NAME:</h6>
+                            <p>Michael Stewart</p>
                         </div>
-                        <div class="col-md-12 col-lg-4">
-                            <div class="summary" style="background-color:rgba(255,255,255,0);"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div style="margin-top:20px;">
+                            <h6 style="font-weight:600;">DATE:</h6>
+                            <p>June 29, 2018</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div style="margin-top:20px;">
+                            <h6 style="font-weight:600;">EMAIL:</h6>
+                            <p>requestor@email.com</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="margin-top:20px;">
+                            <h6 style="font-weight:600;">INQUIRY:</h6>
+                            <p>Fusce fermentum ligula quis urna elementum semper. Vivamus faucibus libero et elit laoreet faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam eu massa elit. Integer ullamcorper
+                                orci nec quam suscipit aliquam. Nunc lobortis massa nisl, eget tempus velit euismod eget. Proin rhoncus eu nunc sit amet scelerisque.</p>
                         </div>
                     </div>
                 </div>
