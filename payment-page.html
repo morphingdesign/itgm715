@@ -42,54 +42,97 @@
         <div class="container">
             <ol class="breadcrumb" style="background-color:rgba(233,236,239,0);">
                 <li class="breadcrumb-item"><a href="index.html"><span><i class="fa fa-home" style="font-size:20px;color:#142b56;"></i></span></a></li>
-                <li class="breadcrumb-item"><a href="#" target="_parent"><span style="color:#142b56;">CART</span></a></li>
-                <li class="breadcrumb-item active"><span style="color:#f77241;font-weight:600;">PAYMENT</span></li>
+                <li class="breadcrumb-item"><a href="checkout.html" target="_parent"><span style="color:#142b56;">CHECKOUT</span></a></li>
+                <li class="breadcrumb-item active"><span style="color:#f77241;font-weight:600;">REVIEW</span></li>
             </ol>
         </div>
         <section class="clean-block clean-services dark" style="background-color:rgba(255,255,255,0);padding-bottom:0px;">
             <div class="container">
                 <div class="block-heading" style="padding-top:0px;margin-bottom:0px;">
-                    <p class="text-left" style="max-width:none;margin-right:0px;margin-left:0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.<br></p>
+                    <p class="text-left" style="max-width:none;margin-right:0px;margin-left:0px;">Please review the details before clicking next. Order will be processed after this step.&nbsp;<a href="checkout.html" target="_parent" style="color:#f77241;">Click here to make edits.</a><br></p>
                 </div>
                 <hr>
             </div>
         </section>
-        <section class="clean-block payment-form dark" style="background-color:rgba(255,255,255,0);">
-            <div class="container">
-                <form>
-                    <div class="products" style="background-color:transparent;">
-                        <h3 class="title">Checkout</h3>
-                        <div class="item"><span class="price">$120</span>
-                            <p class="item-name">Super User Subscription</p>
-                            <p class="item-description" style="color:#142b56;">Lorem ipsum dolor sit amet</p>
-                        </div>
-                        <div class="item"></div>
-                        <div class="total"><span>Total</span><span class="price">$120</span></div>
-                    </div>
-                    <hr>
-                    <div class="card-details">
-                        <h3 class="title">Credit Card Details</h3>
-                        <div class="form-row">
-                            <div class="col-sm-7">
-                                <div class="form-group"><label for="card-holder">Card Holder</label><input class="form-control" type="text" placeholder="Card Holder"></div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="form-group"><label>Expiration date</label>
-                                    <div class="input-group expiration-date"><input class="form-control" type="text" placeholder="MM"><input class="form-control" type="text" placeholder="YY"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="form-group"><label for="card-number">Card Number</label><input class="form-control" type="text" placeholder="Card Number" id="card-number"></div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group"><label for="cvc">CVC</label><input class="form-control" type="text" placeholder="CVC" id="cvc"></div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group"><button class="btn btn-link btn-block" type="button" style="color:#ffffff;background-color:#f77241;">Proceed</button></div>
-                            </div>
+        <section class="clean-block clean-cart dark" style="background-color:rgba(255,255,255,0);padding-bottom:50px;">
+            <div class="container" style="background-color:#ffffff;max-width:600px;padding-top:15px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 style="font-weight:600;">CART</h6>
+                        <div class="table-responsive table-borderless">
+                            <table class="table table-striped table-bordered table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td>Super User Subscription<br></td>
+                                        <td>$120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax</td>
+                                        <td>$0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>$120</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </form>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 style="font-weight:600;">BILLING INFORMATION</h6>
+                        <div class="table-responsive table-borderless">
+                            <table class="table table-striped table-bordered table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td>Name:</td>
+                                        <td>Doug Peterson</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Company:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Street:</td>
+                                        <td>123 Main Street</td>
+                                    </tr>
+                                    <tr>
+                                        <td>City:</td>
+                                        <td>Anywhere</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zip/Postcode:</td>
+                                        <td>12345</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Country:</td>
+                                        <td>United States</td>
+                                    </tr>
+                                    <tr>
+                                        <td>State/Region:</td>
+                                        <td>Anywhere</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone:</td>
+                                        <td>(123) 456-7890</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td>dpeterson@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="margin-top:20px;"></div>
+                        <hr>
+                        <div>
+                            <p class="text-left">When ready, click the Submit Order button below once to complete.</p>
+                        </div>
+                        <div class="form-group"><a class="btn btn-link btn-block" role="button" href="payment-confirmation.html" style="color:rgb(255,255,255);font-weight:600;background-color:#f77241;width:140px;">Submit Order</a></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
